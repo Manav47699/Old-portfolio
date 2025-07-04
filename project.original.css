@@ -1,0 +1,181 @@
+
+body {
+    background-color: black;
+}
+
+
+
+header #first_word{
+  color: gold;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  font-size: 50px;
+ 
+
+}
+
+header #second_word{
+  color: white;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: italic;
+  font-size: 30px;
+  
+}
+
+header #note{
+  /*
+  color: white;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  text-decoration: underline;
+  font-size: 20px;
+  transform: translateX(-50%); /* Center it horizontally */
+  font-size: 20px;
+  text-decoration: underline;
+     font-style: oblique;
+     font-weight: bolder;
+     text-align: center;
+     color: rgba(240, 255, 253, 0.295);
+     white-space: nowrap; /* Prevent the text from wrapping */
+     overflow: hidden;    /* Hide the overflowing text during animation */
+     display: inline-block; /* Ensure the width animates correctly */
+     position: relative;   /* Allow centering via translate */
+     left: 50%;            /* Move the element 50% from the left */
+     transform: translateX(-50%); /* Center it horizontally */
+     animation: typing 10s steps(1000) 10s infinite, erasing 5s steps(1000) 0s infinite; /* Smooth transitions */
+}
+@keyframes typing {
+  10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95% {
+      width: 0;
+  }
+  5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85% {
+      width: calc(100% + 8px);
+  }
+}
+
+
+@keyframes typing {
+   from {
+       width: 0;
+   }
+   to {
+       width: 100%;  /* Gradually reveal the text */
+   }
+}
+
+@keyframes erasing {
+   from {
+       width: 100%;
+   }
+   to {
+       width: 0;  /* Gradually erase the text */
+   }
+}
+
+
+
+
+
+
+
+
+.container {
+    display: flex;
+    width: 100%;
+  }
+  
+/*
+  .section {
+    flex: 1; /* Each section takes equal width 
+    padding: 20px;
+  }
+*/
+
+
+
+#left, #right {
+    
+    margin: 0 10px; /* Adds space between the two divs */
+  }
+
+#left {
+    color: goldenrod;
+    background-color: black;
+    text-align: center;
+    border: 5px solid black;
+    border-radius: 200px;
+    width: 50%;
+    height: 100vh; /* Full viewport height */
+    
+    font-family: "Press Start 2P", serif;
+    font-weight: 400;
+    font-style: normal;
+    
+      
+      
+    
+}
+  
+#right {
+    
+    color: aliceblue;
+    background-color: black;
+    text-align: center;
+    border: 5px solid black;
+    border-radius: 200px;
+    width: 50%;
+    height: 100vh; /* Full viewport height */
+    font-family: "Press Start 2P", serif;
+    font-weight: 400;
+    font-style: normal;
+    
+  }
+
+
+  
+
+  body #right {
+    animation: glow-footer 2s infinite alternate;
+    box-shadow: 0 0 10px rgb(0, 255, 242), 0 0 20px rgb(0, 255, 217), 0 0 30px rgb(0, 242, 255); /* Initial subtle glow */
+}
+
+@keyframes glow-footer {
+    0% {
+        box-shadow: 0 0 10px rgb(0, 255, 242), 0 0 20px rgb(0, 255, 217), 0 0 30px rgb(0, 242, 255); /* Initial subtle glow */
+    }
+    100% {
+        box-shadow: 0 0 20px rgb(0, 251, 255), 0 0 40px rgb(0, 234, 255), 0 0 60px rgb(0, 208, 255); /* Final intense glow */
+    }
+}
+
+  body #left{
+    animation: glow-footer 2s infinite alternate; /* Animation: glow-footer, 2s duration, infinite repeats, alternate direction */
+  }
+  
+  /* Animation keyframe for glowing border effect */
+  @keyframes glow-footer {
+    0% {
+      /* Initial glow state: subtle glow */
+      box-shadow: 0 0 10px rgb(255, 247, 0), 0 0 20px rgb(208, 255, 0), 0 0 30px rgb(183, 255, 0);
+    }
+    100% {
+      /* Final glow state: stronger, more intense glow */
+      box-shadow: 0 0 20px rgb(255, 77, 0), 0 0 40px rgb(255, 60, 0), 0 0 60px rgb(255, 0, 0);
+    }
+  }
+
+
+
+
+
+
+#left #left_elements_title {
+    font-size: 30px;
+}
+
+#right #right_elements_title {
+    font-size: 30px;
+}
+//

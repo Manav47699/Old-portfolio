@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            My Projects
+        </title>
+        <link rel="stylesheet" href="projects.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rubik+Glitch&family=Turret+Road:wght@200;300;400;500;700;800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div id="left">
+                
+                <br><br><br> <br> <br> <br> 
+                Personal Projects
+                <br>
+                <br>
+                <br>
+                
+                <hr>
+
+                <div class = "left_elements_title">
+                    <br>
+                    CALCULATOR APP
+                    <br>
+                    <br>
+                
+                    <div id = "left_elements">
+                    (language: Python)
+                    <br>
+                    (location: Dropbox)
+                    <br>
+                    (Note: downloadable .exe file)
+
+
+                    <hr>
+
+                    <br>
+                    DATA VISUALIZER
+                    <br>
+                    <br>
+                    (language: Python)
+                    <br>
+                    (location: Dropbox)
+                    <br>
+                    (Note: downloadable .exe file)
+
+                    
+                    <hr>
+
+                    </div>
+
+                    
+
+                </div>
+
+            
+            </div>
+
+            <div id="right">
+                
+                
+                <br><br><br> <br> <br> <br> 
+                From Tutorials
+                <br>
+                <br>
+                <br>
+                <hr>
+
+                <div id = "right_elements_title">
+                    <br>
+                    STOP WATCH
+                    <br>
+                    <br>
+                    <div id = "right_elements">
+                    (language: Python)
+                    <br>
+                    (location: Dropbox)
+                    <br>
+                    (Note: downloadable .exe file)
+
+
+                    <hr>
+
+                    <br>
+                    WEATHER APP
+                    <br>
+                    <br>
+                    (language: Python)
+                    <br>
+                    (location: Dropbox)
+                    <br>
+                    (Note: downloadable .exe file)
+
+                    
+                    <hr>
+
+                    
+                </div>
+                </div>
+
+            
+
+            </div>
+          </div>
+          
+    </body>
+</html>

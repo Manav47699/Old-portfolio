@@ -1,0 +1,198 @@
+/*main body starts */
+body{
+    /* background-color: rgba(16, 61, 83, 0.395); */
+     box-sizing: border-box;
+ }
+/*main body ends*/
+
+
+/*header (Hi there...wala) starts. chatgpt elements used*/
+header p {
+    font-size: 50px;
+    font-style: oblique;
+    font-weight: bolder;
+    text-align: center;
+    color: aliceblue;
+    white-space: nowrap; /* Prevent the text from wrapping */
+    overflow: hidden;    /* Hide the overflowing text during animation */
+    display: inline-block; /* Ensure the width animates correctly */
+    position: relative;   /* Allow centering via translate */
+    left: 50%;            /* Move the element 50% from the left */
+    transform: translateX(-50%); /* Center it horizontally */
+    animation: typing 10s steps(1000) 10s infinite, erasing 3s steps(1000) 0s infinite; /* Smooth transitions */
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;    
+}
+/*header (Hi there.....wala) ends */
+
+
+/*2nd header (languages.....wala)  begins*/
+#languages {
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+    position: relative;
+    background-color: rgba(246, 6, 6, 0.463);
+     height: 200px;
+     text-align: center;
+     font-size: 50px;
+     border: 10px double;
+     border-radius: 200px;
+     border-color: gold;
+     color: gold;
+     
+         font-family: "Rubik Glitch", system-ui;
+         font-weight: 400;
+         font-style: normal;
+      
+}
+/*2nd header (languages.....wala)  begins*/
+
+
+/*2nd header (languages.....wala) animation begins*/
+#languages::before {
+    content: "C++";
+    color: #ff7f50;
+    animation: words 20s infinite;
+}
+
+#languages::after {
+    
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    background-color: #2f3542;
+    border-left: 2px solid #ff7f50;
+    right: -8px;
+    animation: typing 20s steps(14) infinite;
+    text-align: right;
+    /* Removed cursor animation here */
+}
+
+@keyframes words {
+    0%, 20% {
+        content: "HTML";
+    }
+    21%, 40% {
+        content: "CSS";
+    }
+    41%, 60% {
+        content: "Python";
+    }
+    61%, 80% {
+        content: "JavaScript";
+    }
+    81%, 100% {
+        content: "C++";
+    }
+}
+
+@keyframes typing {
+    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95% {
+        width: 0;
+    }
+    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85% {
+        width: calc(100% + 8px);
+    }
+}
+
+/*2nd header (languages.....wala) animation begins*/
+
+
+/*about section begins*/
+#name{                                          /*tio main box nai yei raxa kya*/
+    display: block;
+    background-color: aliceblue;
+    text-align: center;
+    width: 1100px;
+    height: 800px;
+    position: relative;
+    left:300px;
+    float: left;
+    border: 5px solid;
+    border-color: lavender;
+    background-color: rgba(179, 255, 0, 0.256);
+    color: aliceblue;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 100px;
+    border: none;
+    
+    
+}
+/*about section ends*/
+
+
+/**/
+/**/
+
+
+/**/
+/**/
+
+
+/**/
+/**/
+
+
+/**/
+/**/
+
+
+/**/
+/**/
+
+
+/**/
+/**/
+
+
+/**/
+/**/
+
+
+/**/
+/**/
+
+
+/**/
+/**/
+
+
+/**/
+/**/
+
+
+/*footer*/
+footer {
+    background-color: #2f3542; /* Dark background for footer */
+    color: white;  /* Text color */
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-top: 3px solid #ff7f50;
+    border-radius: 8px;
+    animation: glow-footerr 2s infinite alternate; /* Apply glow animation */
+    position: relative;
+    bottom: 300px;
+    font-size: 50px;
+    position: relative;
+    ;
+}
+/*footer*/
+
+
+/*footer animation*/
+@keyframes glow-footerr {
+    0% {
+        text-shadow: 0 0 5px #ff7f50, 0 0 10px #ff7f50, 0 0 15px #ff7f50, 0 0 20px #ff7f50;
+        box-shadow: 0 0 5px #ff7f50, 0 0 10px #ff7f50;
+    }
+    100% {
+        text-shadow: 0 0 20px #ff7f50, 0 0 30px #ff7f50, 0 0 40px #ff7f50, 0 0 50px #ff7f50;
+        box-shadow: 0 0 20px #ff7f50, 0 0 30px #ff7f50;
+    }
+}
+/*footer animation*/

@@ -1,0 +1,121 @@
+/* Base styles */
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Main heading */
+  h1 {
+    font-size: 3.5rem;
+    color: aliceblue;
+    margin-bottom: 1rem;
+  }
+  
+  /* Card with personal info */
+  #card {
+    color: white;
+    font-size: 1.5rem;
+    line-height: 0;
+    padding: 1rem;
+  }
+  
+  /* Main content container */
+  #insidebody {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(149, 44, 44, 0);
+    text-align: center;
+    margin: 5% auto;
+    max-width: 90%;
+    padding: 2rem;
+    border-radius: 2rem;
+    animation: glow-footer 2s infinite alternate;
+  }
+  
+  /* Home icon and text */
+  #icon {
+    padding: 1rem;
+  }
+  
+  #icon p {
+    color: aliceblue;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  /* Button styling */
+  #card button {
+    font-size: 1.5rem;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border: none;
+    margin-top: 1rem;
+  }
+  
+  #card button:hover {
+    background-color: gray;
+  }
+  
+  /* Animation keyframe for glowing border effect */
+  @keyframes glow-footer {
+    0% {
+      /* Initial glow state: subtle glow */
+      box-shadow: 0 0 10px rgb(255, 247, 0), 0 0 20px rgb(208, 255, 0), 0 0 30px rgb(183, 255, 0);
+    }
+    100% {
+      /* Final glow state: stronger, more intense glow */
+      box-shadow: 0 0 20px rgb(255, 77, 0), 0 0 40px rgb(255, 60, 0), 0 0 60px rgb(255, 0, 0);
+    }
+  }
+  
+  /* Media Queries for responsiveness */
+  /* Small devices (phones) */
+  @media screen and (max-width: 600px) {
+    h1 {
+      font-size: 2.5rem;
+    }
+    
+    #card {
+      font-size: 1.2rem;
+    }
+    
+    #insidebody {
+      margin: 2rem auto;
+      padding: 1rem;
+      border-radius: 1rem;
+    }
+    
+    #card button {
+      font-size: 1.2rem;
+    }
+  }
+  
+  /* Medium devices (tablets) */
+  @media screen and (min-width: 601px) and (max-width: 900px) {
+    h1 {
+      font-size: 3rem;
+    }
+    
+    #insidebody {
+      max-width: 80%;
+    }
+  }
+  
+  /* For print media */
+  @media print {
+    body {
+      background-color: white;
+    }
+    
+    #insidebody {
+      animation: none;
+      box-shadow: none;
+    }
+    
+    h1, #card, #icon p {
+      color: black;
+    }
+  }
